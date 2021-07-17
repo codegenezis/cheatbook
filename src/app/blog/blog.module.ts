@@ -5,6 +5,8 @@ import { PostComponent } from './post/post.component';
 import { RouterModule } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown';
+import { MaterialModule } from '../material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { MarkdownModule } from 'ngx-markdown';
       {path: ':id', component: PostComponent, pathMatch: 'full'}
     ]),
     HttpClientModule,
-    MarkdownModule.forRoot({loader: HttpClient})
+    MarkdownModule.forRoot({loader: HttpClient}),
+    MaterialModule,
+    FlexLayoutModule
   ]
 })
 export class BlogModule { }
