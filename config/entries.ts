@@ -15,7 +15,15 @@ export interface Post {
       date: new Date('2020-12-23'),
     },
     {
-      title: 'Jump-starting a fresh MacBook for Front End JavaScript development',
+      title: 'git-cheatsheet',
+      date: new Date('2020-10-11')
+    },
+    {
+      title: 'docker-cheatsheet',
+      date: new Date('2020-10-11')
+    },
+    {
+      title: 'Ansible-cheatsheet',
       date: new Date('2020-10-11')
     }
   ];
