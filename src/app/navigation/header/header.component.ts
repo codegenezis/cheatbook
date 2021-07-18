@@ -19,4 +19,9 @@ export class HeaderComponent implements OnInit {
     // Now we emit an event whenever the toggle button is clicked
   }
 
+  github(){
+    let url: string ="https://github.com/codegenezis/cheatbook"
+    window.open(url, '_blank')
+  }
+
 }

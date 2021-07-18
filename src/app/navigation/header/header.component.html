@@ -6,13 +6,18 @@
     </div>
     <div>
         <a routerLink="/">
-            <span class="header-caption">Cheat Sheet</span>
+            <span class="header-caption" style="font-weight: bolder;">Cheat Sheet</span>
         </a>
     </div>
                  
     <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
         <ul fxLayout fxLayoutGap="10px" class="navigation-items">
             <li><a routerLink="/">Home</a></li>
+            <li>
+                <div class="github" (click)="github()">
+                    <i class="fa fa-github"></i>&nbsp;Github
+                </div>
         </ul>                
     </div>
+
 </mat-toolbar>

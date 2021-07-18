@@ -19,4 +19,11 @@ export class SidenavListComponent implements OnInit {
     // whenever this onclose function called, it emits the event
   }
 
+  github(){
+    let url: string ="https://github.com/codegenezis/cheatbook"
+    window.open(url, '_blank')
+    this.onclose();
+  }
+
+
 }

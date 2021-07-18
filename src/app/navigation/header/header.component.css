@@ -17,3 +17,8 @@ a:hover,a:active{
     display: inline-block;
     padding-left: 6px;
 }
+
+.github{
+    padding-left: 6px;
+    cursor: pointer;
+}
