@@ -2,6 +2,10 @@
 
 A website designed in [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1 to display the cheatsheet's of differnet language
 
+## [Cheatsheet helper](https://cheatsheet-helper.netlify.app/)
+
+This website is designed in Angular framework and deployed in [Netlify](https://app.netlify.com/)
+
 ## Modules used
 
 1. Angular Material 12.1.2
