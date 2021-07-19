@@ -1,27 +1,29 @@
 # Cheatbook
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+A website designed in [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1 to display the cheatsheet's of differnet language
 
-## Development server
+## [Cheatsheet helper](https://cheatsheet-helper.netlify.app/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This website is designed in Angular framework and deployed in [Netlify](https://app.netlify.com/)
 
-## Code scaffolding
+## Modules used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Angular Material 12.1.2
+2. Angular Animation 12.0.5
+3. Angular FlexLayout 12.0.0-beta.34
+4. font awesome 4.7.0
+5. ngx-markdown 12.0.1
 
-## Build
+## 🤔 Why Cheat sheet
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+When working with differnet languages, I usually refer cheatsheet for refering the syntax. So gathered my cheat sheets to display in this website which would be helpful for everyone.
 
-## Running unit tests
+## 📚 Content
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Bash
+2. Docker
+3. Python
 
-## Running end-to-end tests
+## 🙌🏼 How to Contribute?
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+you are welcome to contribute your cheat sheet for your favourite programming language, framework or development tools. Submit your changes via pull request and I will review before Merging.
