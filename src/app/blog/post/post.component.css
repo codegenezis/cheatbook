@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300italic,300);
+
+#markdown-post {
+  /* https://github.com/mrmrs/fluidity */
+  /* === A bit of a gross hack so we can have bleeding divs/blockquotes. */
+  /* Counteract the specificity of the gross *:not() chain. */
+  /*  === End gross hack */
+}
+@media print {
+  #markdown-post *, #markdown-post *:before, #markdown-post *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  #markdown-post a, #markdown-post a:visited {
+    text-decoration: underline;
+  }
+  #markdown-post a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  #markdown-post abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  #markdown-post a[href^="#"]:after, #markdown-post a[href^="javascript:"]:after {
+    content: "";
+  }
+  #markdown-post pre, #markdown-post blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  #markdown-post thead {
+    display: table-header-group;
+  }
+  #markdown-post tr, #markdown-post img {
+    page-break-inside: avoid;
+  }
+  #markdown-post img {
+    max-width: 100% !important;
+  }
+  #markdown-post p, #markdown-post h2, #markdown-post h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  #markdown-post h2, #markdown-post h3 {
+    page-break-after: avoid;
+  }
+}
+#markdown-post html {
+  font-size: 12px;
+}
+@media screen and (min-width: 32rem) and (max-width: 48rem) {
+  #markdown-post html {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 48rem) {
+  #markdown-post html {
+    font-size: 16px;
+  }
+}
+#markdown-post body {
+  line-height: 1.85;
+}
+#markdown-post p, #markdown-post .splendor-p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+#markdown-post h1, #markdown-post .splendor-h1, #markdown-post h2, #markdown-post .splendor-h2, #markdown-post h3, #markdown-post .splendor-h3, #markdown-post h4, #markdown-post .splendor-h4 {
+  margin: 1.414rem 0 0.5rem;
+  font-weight: inherit;
+  line-height: 1.42;
+}
+#markdown-post h1, #markdown-post .splendor-h1 {
+  margin-top: 0;
+  font-size: 3.5rem;
+}
+#markdown-post h2, #markdown-post .splendor-h2 {
+  font-size: 2rem;
+}
+#markdown-post h3, #markdown-post .splendor-h3 {
+  font-size: 1.5rem;
+}
+#markdown-post h4, #markdown-post .splendor-h4 {
+  font-size: 1.414rem;
+}
+#markdown-post h5, #markdown-post .splendor-h5 {
+  font-size: 1.121rem;
+}
+#markdown-post h6, #markdown-post .splendor-h6 {
+  font-size: 0.88rem;
+}
+#markdown-post small, #markdown-post .splendor-small {
+  font-size: 0.707em;
+}
+#markdown-post img, #markdown-post canvas, #markdown-post iframe, #markdown-post video, #markdown-post svg, #markdown-post select, #markdown-post textarea {
+  max-width: 100%;
+}
+#markdown-post html {
+  font-size: 18px;
+  max-width: 100%;
+}
+#markdown-post body {
+  color: #444;
+  font-family: 'Merriweather', Georgia, serif;
+  margin: 0;
+  max-width: 100%;
+}
+#markdown-post p, #markdown-post *:not(div):not(img):not(body):not(html):not(li):not(blockquote):not(p) {
+  margin: 1rem auto 1rem;
+  max-width: 46rem;
+  padding: 0.25rem;
+}
+#markdown-post div {
+  width: 100%;
+}
+#markdown-post div img {
+  width: 100%;
+}
+#markdown-post blockquote p {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 1rem auto 1rem;
+  max-width: 54rem;
+}
+#markdown-post li {
+  margin-left: 2rem;
+}
+#markdown-post h1 {
+  padding: 1rem 0 !important;
+}
+#markdown-post p {
+  color: #555;
+  height: auto;
+  line-height: 1.45;
+}
+#markdown-post pre, #markdown-post code {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+#markdown-post pre {
+  background-color: #fafafa;
+  font-size: 0.8rem;
+  overflow-x: scroll;
+  padding: 1.125em;
+}
+#markdown-post a, #markdown-post a:visited {
+  color: #3498db;
+}
+#markdown-post a:hover, #markdown-post a:focus, #markdown-post a:active {
+  color: #2980b9;
+}
